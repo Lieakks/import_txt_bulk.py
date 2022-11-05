@@ -3,9 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-os.getcwd()  # get current working directory
-os.chdir('C:/Users/Daipei/Nutstore/1/Experiment_Data/muscle2/damping')  # change working directory
-path = 'C:/Users/Daipei/Nutstore/1/Experiment_Data/muscle2/damping'  # set path
+os.getcwd()  # get current working director
+path = str(input('please input the path of the folder: '))  # input the path of the folder
+os.chdir(path)  # change working directory
+#path = 'C:/Users/Daipei/Nutstore/1/Experiment_Data/muscle2/damping'  # set path
 os.listdir(path)  # list files in the path
 
 datalist = []  # create an empty list
